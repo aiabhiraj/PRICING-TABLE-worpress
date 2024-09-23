@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pricing-table {
+    display: flex;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.pricing-plan {
+    background: linear-gradient(135deg, #1a73e8, #4285f4);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transform: rotateY(-10deg);
+}
+
+.pricing-plan:hover {
+    transform: rotateY(0deg) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.plan-highlight {
+    background: linear-gradient(135deg, #34a853, #0f9d58);
+    transform: rotateY(0deg);
+}
+
+.plan-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-header .price {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.plan-header .duration {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.plan-features li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.select-plan {
+    background-color: #ffeb3b;
+    color: #1a73e8;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.select-plan:hover {
+    background-color: #4285f4;
+    color: white;
+}
